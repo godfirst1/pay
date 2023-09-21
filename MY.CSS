@@ -1,0 +1,516 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    position: fixed;
+}
+.brand-name{
+    width: 15%;
+    padding: 20px;
+    height: 10vh;
+    align-items: center;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    width: 85%;
+    height: 10vh;
+    align-items: center;
+}
+nav ul li:hover{
+    border: 1px solid rgb(177, 9, 9);
+    height: 10vh;
+    background-color: rgb(177, 9, 9);
+    padding-top: 22px;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+nav ul li{
+    background-color: rgb(43, 42, 42);
+    border: 1px solid rgb(43, 42, 42);
+    padding-left: 6px;
+    padding-right: 6px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*-----------===========Dropdown btn-==========*/
+
+.dropdown-btn{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+.dropdown-contents{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0 .2);
+}
+.dropdown-contents a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.dropdown-contents a:hover{
+    background-color: #ddd;
+    visibility: visible;
+
+}
+.dropdown-btn:hover{
+    display: block;
+}
+#home{
+    background-image: url(img/hero-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.home-h1{
+    color: #fff;
+    font-size: 35px;
+    top: 40%;
+    padding-top: 200px;
+    padding-left: 3%;
+    margin-bottom: 30px;
+    
+}
+
+.home-p{
+    color: #fff;
+    font-size: 15px;
+    padding-left: 3%;
+    margin-bottom: 60px;
+}
+
+.home-btn{
+    margin-left: 3%;
+    font-size: 25px;
+    border: 5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.9s;
+    border-radius: 6px;
+
+}
+
+.home-btn:hover{
+    border: 5px solid #fff;
+    background-color: rgb(177, 9, 9);
+    transition: 0.9s;
+    border-radius: 6px;
+    color: white;
+}
+.hr{
+
+    border: 2px solid rgb(73, 72, 72);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+#about{
+    height: 170vh;
+    width: 100%;
+}
+.about{
+    background-color: bisque;
+    height: 170vh;
+}
+
+.about-us{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(177, 9, 9);
+}
+.flex-about{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.about-txt{
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.about-h1{
+    padding-bottom: 20px;
+}
+.about-img{
+    padding-right: 3%;
+    border-radius: 30px;
+    padding-left: 2%;
+}
+.abt-flxbx2{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 7%;
+}
+.item-flex{
+    background-color: burlywood;
+    padding: 18px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+.item-flex:hover{
+    background-color: rgb(177, 9, 9);
+    transition: 0.9s;
+    color: #fff;
+}
+.flx1{
+    padding-bottom: 80px;
+    font-size: 40px;
+    color: rgb(177, 9, 9);
+}
+.flx1:hover{
+    color: #fff;
+}
+.services{
+    background-color: #fff;
+    font-family: sans-serif;
+}
+.serve-h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: rgb(177, 9, 9);
+}
+.serve-p{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 25px;
+    
+}.serve-flx{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    gap: 80px;
+
+}
+.flx-serve1{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+}
+.flx-serve11{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+    margin-top: 70px;
+}
+
+.flx-serve1:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+.flx-serve11:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+.flx-serve2{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+}
+.flx-serve22{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+    margin-top: 70px;
+}
+.flx-serve2:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+.flx-serve22:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+
+.flx-serve3{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+}
+.flx-serve33{
+    gap: 80px;
+    background-color: antiquewhite;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.9s;
+    margin-top: 70px;
+}
+.flx-serve3:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+.flx-serve33:hover{
+    background-color: rgb(177, 9, 9);
+    color: #fff;
+    transition: 0.9s;
+}
+.serve-h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    background-color: #000;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #fff;
+    transition: 0.9s;
+    border-radius: 13px;
+
+}
+.serve-h2:hover{
+    background-color: #fff;
+    transform: 0.9s;
+    color: #000;
+    border: 1px solid #fff;
+}
+.serve-h3{
+    padding-bottom: 10px;
+    padding-top: 40px;
+    color: #fff;
+
+}
+
+.sev-cta{
+    background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(img/cta-bg.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    margin-top: 30px;
+    text-align: center;
+    padding: 120px 0;
+
+}
+
+.cta-h1{
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+.cta-p{
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 2%;
+}
+.cta-btn{
+    margin-top: 3%;
+    padding: 15px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/*-----=======================Portfolio====================-------*/
+
+
+.pot-h1{
+    text-align: center;
+    padding-top: 80px;
+    color: rgb(177, 9, 9);
+    padding-bottom: 20px;
+}
+
+.hr{
+    border: 2px solid rgb(73, 72, 72);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+
+.pot-p{
+    padding-top: 25px;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 30px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    cursor: pointer;   
+}
+
+li a:hover{
+    color: rgb(177, 9, 9);
+}
+
+.pot-ul a{
+    color: #000;
+}
+#all{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#app{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pri-flx{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 0% 3% 0% 3%;
+}
+.pri-flx1{
+    text-align: center;
+    border: 1px solid burlywood;
+    background-color: burlywood;
+    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-radius: 25px;
+}
+.pri-flx2{
+    text-align: center;
+    border: 1px solid rgb(177, 9, 9);
+    background-color: rgb(177, 9, 9);
+    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-radius: 25px;
+}
+
+.pri-flx3{
+    text-align: center;
+    border: 1px solid burlywood;
+    background-color: burlywood;
+    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-radius: 25px;
+}
+
+.pri-btn{
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(177, 9, 9);
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid rgb(177, 9, 9);
+    cursor: pointer;
+}
+.pri-btn:hover{
+    background-color: rgb(197, 12, 12);
+    border: 1px solid rgb(197, 12, 12);
+    color: #fff;
+}
+
+.pri-btn2{
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(216, 18, 18);
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid rgb(216, 18, 18);
+    cursor: pointer;
+}
+.pri-btn2:hover{
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    color: rgb(177, 9, 9);
+}
+.pri-h1-p{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 80px;
+    padding-bottom: 45px;
+}
+
+.pri-h1{
+    padding-bottom: 20px;
+}
+.pri-p{
+    padding-top: 25px;
+    font-family: sans-serif;
+}
